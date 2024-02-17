@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = SimpleApp
+title = SimpleApplication
 
 # (str) Package name
-package.name = SimpleApp
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1
+requirements = python3,kivy==2.1.0,kivymd==0.104.2,pillow==8.3.1,datetime
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.6
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
@@ -137,8 +137,6 @@ fullscreen = 0
 # the default, you will be shown the license when first running
 # buildozer.
 # android.accept_sdk_license = False
-# (str) Buildozer action (target)
-target = android_new
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.kivy.android.PythonActivity
